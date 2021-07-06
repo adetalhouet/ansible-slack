@@ -1,0 +1,13 @@
+---
+- name: Send slack message
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  run_once: true
+
+  tasks:
+  - name: Send notification message via Slack
+    community.general.slack:
+      token: TD303K6MD/B0271QF0CJ2/9G3xqi1x1Mf3O9n8fOVIsO99
+      msg: '{{ message }} {{ target_clusters }}'
+    delegate_to: localhost
