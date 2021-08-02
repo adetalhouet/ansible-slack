@@ -9,5 +9,5 @@
   - name: Send notification message via Slack
     community.general.slack:
       token: TD303K6MD/B0271QF0CJ2/9G3xqi1x1Mf3O9n8fOVIsO99
-      msg: '{{ message }} \n {{ cluster_deployment | to_nice_json }} \n {{ install_config | to_nice_json }}'
+      msg: '{{ message }} {{ cluster_deployment | to_nice_json }} {{ install_config | to_nice_json }}'
     delegate_to: localhost
