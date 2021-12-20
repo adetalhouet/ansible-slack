@@ -8,6 +8,6 @@
   tasks:
   - name: Send notification message via Slack
     community.general.slack:
-      token: TD303K6MD/B0271QF0CJ2/9G3xqi1x1Mf3O9n8fOVIsO99
+      token: TD303K6MD/B02GAFSTE3V/whz0tbeoxFz10a092Jkpo6nO
       msg: '{{ message }} {{ target_clusters }}'
     delegate_to: localhost
